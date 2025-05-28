@@ -1,0 +1,4 @@
+192.168.178.11 //PC @ Windows 11
+192.168.178.69 //Steamdeck @ SteamOS 3/Arch Linux
+192.168.178.61 //MacBook Raphael @ MacOS Sequoia
+192.168.178.51 //MacBook Analena @ MacOS Sequoia
