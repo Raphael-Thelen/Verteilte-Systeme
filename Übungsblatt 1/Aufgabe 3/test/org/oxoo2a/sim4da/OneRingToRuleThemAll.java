@@ -131,8 +131,10 @@ public class OneRingToRuleThemAll {
 
     @Test
     public void testOneRingToRuleThemAll() {
-        int[] ringSizes =
-                {2,4,8,16,32,64,128,256,512,1024};
+        int[] ringSizes = {
+                2,4,8,16,32,64,128,256,512,1024,
+                2048,4096,8192
+        };
         List<Result> results = new ArrayList<>();
         PrintStream oldOut = System.out;
 

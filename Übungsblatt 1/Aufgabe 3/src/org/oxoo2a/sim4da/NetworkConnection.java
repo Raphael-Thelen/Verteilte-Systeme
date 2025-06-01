@@ -17,10 +17,9 @@ public class NetworkConnection {
         return node_name;
     }
 
-    public void engage ( Runnable node_main ) {
+    public void engage(Runnable node_main) {
         this.node_main = node_main;
-        thread = new Thread(this::node_main_base);
-        thread.start();
+        thread = Thread.startVirtualThread(this::node_main_base);
     }
 
     private void node_main_base() {
