@@ -27,7 +27,7 @@ def parse_stats(output):
             })
     if not stats:
         return None
-    total_rounds = sum(s["rounds"] for s in stats)
+    total_rounds = max(s["rounds"] for s in stats)
     total_multicasts = sum(s["multicasts"] for s in stats)
     all_times = [t for s in stats for t in s["round_times"]]
     if all_times:
