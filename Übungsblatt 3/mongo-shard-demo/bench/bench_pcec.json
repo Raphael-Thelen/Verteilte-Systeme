@@ -1,0 +1,14 @@
+[
+  {
+    "method": "POST",
+    "path": "/increment",
+    "body": "{\"counterId\":\"pageViews\",\"delta\":1}",
+    "headers": { "Content-Type": "application/json" },
+    "weight": 8
+  },
+  {
+    "method": "GET",
+    "path": "/value?counterId=pageViews",
+    "weight": 2
+  }
+]
